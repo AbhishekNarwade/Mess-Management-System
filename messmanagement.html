@@ -1,0 +1,828 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+
+    <title>Mess Management Project</title>
+    
+</head>
+<body>
+    <!--Start Header-->
+    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f3971b">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <tr>
+                        <td>
+                            <font face="arial" color="#000000" size="5">
+                                <span class="fa fa-user-circle" aria-hidden="true"></span>
+                                Abhishek Narwade
+                            </font>
+                        </td>
+                        <td >
+                            &nbsp;
+                        </td>
+                        <td>
+                            <a href="#home"><font face="arial" color="#ffffff" size="4">Home</font></a>
+                        </td>
+                        <td>
+                            <a href="#about"><font face="arial" color="#ffffff" size="4">About</font></a>
+                        </td>
+                        <td>
+                            <a href="#detail"><font face="arial" color="#ffffff" size="4">detail</font></a>
+                        </td>
+                        <td>
+                            <a href="#rules"><font face="arial" color="#ffffff" size="4">rules</font></a>
+                        </td>
+                        <td>
+                            <a href="#Menu"><font face="arial" color="#ffffff" size="4">Menu</font></a>
+                        </td>
+                        <td>
+                            <a href="#add members"><font face="arial" color="#ffffff" size="4">add members</font></a>
+                        </td>
+                        <td>
+                            <a href="#add deposit"><font face="arial" color="#ffffff" size="4">add deposit</font></a>
+                        </td>
+                        <td>
+                            <a href="#add cost"><font face="arial" color="#ffffff" size="4">add cost</font></a>
+                        </td>
+                        <td>
+                            <a href="#contact"><font face="arial" color="#ffffff" size="4">contact</font></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+           </tr>
+         </table>
+    <!--End Header-->
+
+
+
+    <!--Start Home-->
+     <table id="home" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h3>
+                                <font face="'Brush Script MT', cursive" color="#ffffff" size="6">
+                                     Hi, I'm Abhishek Narwade
+                                </font>
+                            </h3>
+                          <h2>
+                            <font face="'Courier New', monospace" color="#f3971b" size="7">
+                                Mess Management System
+                           </font>
+                        </h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            </tr>
+       </table>
+    <!--End Home-->
+
+
+
+    <!--Start About-->
+    <table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="2">
+                                <font face="arial" color="#f3971b" size="6">
+                                     About Mess
+                                </font>
+                                <hr width="70" color="#f3971b">
+                         </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <td width="65%">
+                            <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                  <div class="numbertext">1 / 3</div>
+                                  <img src="thali11.jpg" style="width:100%">
+                                  <div class="text">Caption Text</div>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <div class="numbertext">2 / 3</div>
+                                  <img src="thali4.jpg" style="width:100%">
+                                  <div class="text">Caption Two</div>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <div class="numbertext">3 / 3</div>
+                                  <img src="thali5.jpg" style="width:100%">
+                                  <div class="text">Caption Three</div>
+                                </div>
+                                
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+                                
+                                </div>
+                                <br>
+                                
+                                <div style="text-align:center">
+                                  <span class="dot" onclick="currentSlide(1)"></span> 
+                                  <span class="dot" onclick="currentSlide(2)"></span> 
+                                  <span class="dot" onclick="currentSlide(3)"></span> 
+                                </div>
+                                
+                                <script>
+                                let slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                  showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                  showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                  let i;
+                                  let slides = document.getElementsByClassName("mySlides");
+                                  let dots = document.getElementsByClassName("dot");
+                                  if (n > slides.length) {slideIndex = 1}    
+                                  if (n < 1) {slideIndex = slides.length}
+                                  for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";  
+                                  }
+                                  for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";  
+                                  dots[slideIndex-1].className += " active";
+                                }
+                                </script>
+                                
+                        </td>
+                        <td width="60%">
+                            <font face="arial" color="#ffffff" size="5">
+                                <h2>
+                                    I am a Mess Manager
+                                </h2>
+                                <ul>
+                                    <li>This website will help to manage your full mess(where bachelors live), so no need to use paper and calculator anymore.No need to worry of losing any...  </li><br>
+                                    <li>Last updated on 2/22/2024</li><br>
+                                    <li>There have been 9 updates</li><br>
+                                    <li>Virus scan status:</li><br>
+                                  </ul>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+         </tr>
+         </table>
+    <!--End About-->
+
+
+
+    <!--Start Services-->
+    <table id="detail" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="3">
+                                <font face="arial" color="#292929" size="6">
+                                     Services
+                                </font>
+                                <hr width="70" color="#292929">
+                         </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <td width="33%">
+                            <a href="restaurant.jpg"><img src="restaurant.jpg" alt="menu1"  width="100%"></a>
+                        </td>
+                        <td width="33%">
+                            <a href="restaurant1.jpg"><img src="restaurant1.jpg" alt="menu1"  width="100%"></a>
+                        </td>
+                        <td width="33%">
+                            <a href="restaurant2.jpg"><img src="restaurant2.jpg" alt="menu1"  width="100%"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+         </tr>
+       </table>
+    <!--End Services-->
+
+
+    
+    <!--Start Rules-->
+     <table id="rules" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="4">
+                                <font face="arial" color="#f3971b" size="8">
+                                     rules
+                                </font>
+                                <hr width="70" color="#f3971b">
+                         </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#ffffff" size="5">
+                                <h3 align="center">Rule 1</h3>
+                            </font>
+                            <font face="Times New Roman (serif)" color="#c2c0c3"  size="6">
+                                Mess plans are typically provided for the entire academic session (usually around 10 months).
+                            </font>
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#ffffff" size="5">
+                                <h3 align="center">Rule 2</h3>
+                            </font>
+                            <font face="Times New Roman (serif)" color="#c2c0c3" size="6">
+                                Students can avail the mess plan two days before the start of the academic session and must leave it within two days after regular exams.
+                            </font>
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#ffffff" size="5">
+                                <h3 align="center">Rule 3</h3>
+                            </font>
+                            <font face="Times New Roman (serif)" color="#c2c0c3" size="6">
+                                Additional charges may apply if you need mess facilities beyond the regular academic session (e.g., summer school, reappear exams, etc.).
+                            </font>
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#ffffff" size="5">
+                                <h3 align="center">Rule 4</h3>
+                            </font>
+                            <font face="Times New Roman (serif)" color="#c2c0c3" size="6">
+                                Customized plans (e.g., for the full calendar year) may be available upon request.
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+         </tr>
+       </table>
+    <!--End Rules-->
+
+
+
+    <!--Start Menu table-->
+    <table  id="Menu" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+        <tr>
+            <td>
+                <table  width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="2">
+                                <font face="arial" color="#292929" size="7">
+                                     Menu
+                                </font>
+                                <hr width="70" color="#292929">
+                         </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <td width="120%" valign="top">
+                           <font face="arial"color="#292929" size="5">
+                             <table>
+             <colgroup>
+                 <col span="8" style="background-color: #eedfd6">
+            </colgroup>
+    <tr>
+        <th>DAYS</th>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+    </tr>
+    <tr>
+        <td>BREAKFAST (7:15-9:00)</td>
+        <td>Poha + Matar Cury</td>
+        <td>Idli (6 Pes) + Sambar + Chutney</td>
+        <td>Puri (6 Pes) + Aloo Sabji</td>
+        <td>Upma + Matar Curry</td>
+        <td>Paratha (3 Pes) + Aludam</td>
+        <td>Vada (6 Pes) + Matar Curry</td>
+        <td>Chakuli (2 Pes) + Sambar + Chutney</td>
+    </tr>
+        <tr>
+
+            <tr>
+                <td>LUNCH (12:15 - 2:00)</td>
+                <td>Rice Roti + Dalma + Alu Bharta / Badi Chura + Khata</td>
+                <td>Rice + Roti + Samber/Dal + Rajma + Bhaja + Dahi boondi</td>
+                <td>Rice + Dal + Roti + Chicken curry (3 Pes) / Paneer curry + Dahi Salad</td>
+                <td>Rice + Roti + Besan Alu / sajana chui Alu + Dal fry + Pampad</td>
+                <td>Rice + Dal + Matar Paneer / Fish Curry (1 pes) + Salad</td>
+                <td>Rice + Dal + Roti -+ Mix Veg / Egg Curry (2 Pes) + Chips</td>
+                <td>Veg Biriyani/Chicken Biriyani (3 Pes) + Raita + Gulab Jamun</td>
+            </tr>
+            <tr>
+                <td>DINNER (7:30 - 9:00)</td>
+                <td>Roti + Soyabean Alu Curry + Simei</td>
+                <td>(Paratha + Aloo Dum)</td>
+                <td>Roti-+ muttor Paneer</td>
+                <td>Chhole Bhature (3 Pes) + Raita</td>
+                <td>Ruti + Chilli Mushroom + Suji</td>
+                <td>(Ruti + Chana Masala) / (Roti + Chilli Kobi)</td>
+                <td>Ruti -+ Chilli Chicken (4 Pes) / Chilli Paneer</td>
+            </tr>
+         </table>
+      </font>
+                        </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+          </tr>
+       </table>
+    <!--End Menu Table-->
+
+
+
+      <table id="add members" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="1">
+                                <font face="arial" color="#f3971b" size="7">
+                                    Add Members
+                                </font>
+                                <hr width="70" color="#f3971b">
+                        
+                       
+
+
+                 <br><br>   <center>     
+
+
+
+<form>
+    <font face="Times New Roman (serif)"color="#ffffff" size="5">
+    
+        <label for="fname">First name :</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last name :</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <p>Month started and End details :</p>  
+  <label for="datemin">Enter a date after 2024-01-01 :</label>
+  <input type="date" id="datemin" name="datemin" min="2024-01-02"><br><br>
+
+  <label for="datemax">Enter a date before 2030-01-01 :</label>
+  <input type="date" id="datemax" name="datemax" max="2030-12-31"><br><br>
+  <p>Gender :</p>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="male">Male</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="female">Female</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="other">Other</label><br><br>
+  
+  
+  <input type="submit" value="Submit" >
+</font>
+</form>
+</center>
+</td>
+</tr>
+</td>
+</tr>
+</table>
+
+
+<br><br>
+<table id="add deposit" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+    <tr>
+        <td>
+            <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                <!-- Heading Start-->
+                <tr>
+                    <td height="180" align="center" valign="middle" colspan="1">
+                            <font face="arial" color="#292929" size="7">
+                                Add deposit
+                            </font>
+                            <hr width="70" color="#292929">
+                    
+                    </td>
+                </tr>
+            
+
+               <tr>
+                    <td width="100%" valign="top">
+                        <center>  <font face="Times New Roman (serif)"color="#292929" size="5">
+                        
+
+                       
+<h2>Add member's Money</h2><br>
+<form>
+   <label for="select date">Select Date :</label>
+    <input type="date" id="birthday" name="birthday"><br><br><br>
+    <label for="fname">Deposit Amount :</label>
+  <input type="text" id="fname" name="fname" value="e.g 500 or -500"><br><br><br>
+  <label for="fname">Deposit Details (optional) :</label>
+  <input type="text" id="fname" name="fname" value="e.g for meal"><br><br><br>
+  <label for="fname">Select member :</label>
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist><br><br><br>
+    <input type="submit" value="Submit" > <br><br>
+
+  </form>
+</center>
+</font>
+</td>
+</tr>
+     
+
+
+
+
+<table id="add cost" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+    <tr>
+        <td>
+            <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                <!-- Heading Start-->
+                <tr>
+                    <td height="180" align="center" valign="middle" colspan="1">
+                            <font face="arial" color="#f3971b" size="7">
+                                Add cost
+                            </font>
+                            <hr width="70" color="#f3971b">
+                    
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td width="100%" valign="top">
+                        <center>  <font face="Times New Roman (serif)"color="#ffffff" size="5">
+                        
+
+                       
+<h2>Add Meal Cost</h2><br>
+<form>
+    <label for="select date">Select Date :</label>
+    <input type="date" id="birthday" name="birthday"><br><br><br>
+    <label for="fname">Meal Cost Amount :</label>
+  <input type="text" id="fname" name="fname" value="e.g 1000"><br><br><br>
+  <label for="fname">Meal Cost/ Bazar Details(optional) :</label>
+  <input type="text" id="fname" name="fname" value="e.g rice, oil, fish etc."><br><br><br>
+  <label for="fname">Select shoppers :</label>
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist><br><br><br>
+    <input type="submit" value="Submit"><br><br>
+  </form>
+</center>
+</font>
+</td>
+</tr>
+
+    <!--Start Contact-->
+    <table id="contact" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="1">
+                                <font face="arial" color="#292929" size="6">
+                                     Contact
+                                </font>
+                                <hr width="70" color="#292929">
+                        
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <td align="center" valign="top">
+                           <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
+                               <tr>
+                                   <td width="30%">
+                                       <font face="arial" size="4" color="#ffffff">
+                                           Name
+                                       </font>
+                                   </td>
+                                   <td width="70%">
+                                    <font face="arial" size="4" color="#ffffff">
+                                        <input type="text" size="40">
+                                    </font>
+                                    </td>
+                               </tr>
+                               <tr>
+                                <td width="30%">
+                                    <font face="arial" size="4" color="#ffffff">
+                                        Email
+                                    </font>
+                                </td>
+                                <td width="70%">
+                                 <font face="arial" size="4" color="#ffffff">
+                                     <input type="text" size="40">
+                                 </font>
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td width="30%">
+                                    <font face="arial" size="4" color="#ffffff">
+                                        Message
+                                    </font>
+                                </td>
+                                <td width="70%">
+                                 <font face="arial" size="4" color="#ffffff">
+                                     <textarea rows="5" cols="42"></textarea>
+                                 </font>
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td width="30%">
+                                   &nbsp;
+                                </td>
+                                <td width="70%">
+                                    <button type="Submit">
+                                        <font face="arial" size="4" color="#292929">
+                                             Submit
+                                        </font>
+                                </button>
+                                 </td>
+                            </tr>
+                           </table>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End Contact-->
+
+
+   
+    <!--Start Footer-->
+    <table id="header" border="1" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                   
+                    <tr>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-facebook-square" aria-hidden="true"></span>
+                                Facebook
+                            </font>
+                            
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-twitter-square" aria-hidden="true"></span>
+                                Twitter
+                            </font>
+                            
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-instagram" aria-hidden="true"></span>
+                                Instagram
+                            </font>
+                            
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-linkedin-square" aria-hidden="true"></span>
+                                Linkedin
+                            </font>
+                            
+                        </td>
+                        <td rowspan="2">
+                            <font face="arial" color="#ffffff" size="5">
+                                <span class="fa fa-arrow-circle-up" aria-hidden="true"></span>
+                             <a href="#header">
+                                <font face="arial" color="#ffffff" size="5">
+                                    Top
+                                </font>
+                                
+                            </a>
+                            </font>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-youtube-square" aria-hidden="true"></span>
+                                YouTube
+                            </font>
+                            
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-rss-square" aria-hidden="true"></span>
+                                Blog
+                            </font>
+                            
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                                Email
+                            </font>
+                            
+                        </td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-globe" aria-hidden="true"></span>
+                                Website
+                            </font>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End Footer-->
+</body>
+</html>
